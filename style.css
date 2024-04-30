@@ -33,7 +33,7 @@ header {
 }
 
 section, main {
-    width: 800px;
+    min-width: 800px;
 }
 
 section {
@@ -153,14 +153,14 @@ section {
     width: fit-content;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 850px) {
     header {
         justify-content: flex-start;
         padding-left: 15px;
     }
 
     section, main {
-        width: 350px;
+        min-width: 350px;
     }
 
     body>section {
@@ -181,6 +181,10 @@ section {
     .big-numbers {
         justify-content: center;
         width: 100%;
+    }
+
+    h2 {
+        margin: 0px 15px;
     }
 
     .favorites {
