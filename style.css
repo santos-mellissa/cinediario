@@ -12,6 +12,7 @@ body {
     flex-direction: column;
     gap: 40px;
     min-height: 100vh;
+    min-width: 100vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
 }
 
@@ -150,4 +151,49 @@ section {
     font-size: 12px;
     padding: 3px 6px;
     width: fit-content;
+}
+
+@media (max-width: 380px) {
+    header {
+        justify-content: flex-start;
+        padding-left: 15px;
+    }
+
+    section, main {
+        width: 350px;
+    }
+
+    body>section {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .profile>div {
+        text-align: center;
+    }
+
+    .big-numbers {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .favorites {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .watchlist {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .movie>span  {
+        display: none;
+    }
 }
